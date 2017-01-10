@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
         long response = winscard.SCardConnect(params);
         byte[] blong = longToBytes(response);
 
-
         Log.e("response long", String.valueOf(response));
         Log.e("response", "code: " + bytesToHex(blong));
     }
